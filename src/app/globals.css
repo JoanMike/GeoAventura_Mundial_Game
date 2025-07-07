@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 120 39.4% 49.6%; /* Green: #4CAF50 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217.2 91.2% 59.4%; /* Blue: #2196F3 */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 36 100% 50%; /* Orange: #FF9800 */
+    --accent-foreground: 240 10% 3.9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 222 83% 4%;
+    --foreground: 210 20% 98%;
+
+    --card: 222 83% 4%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20% 97%;
+
+    --primary: 120 39.4% 49.6%;
+    --primary-foreground: 120 25% 95%;
+
+    --secondary: 217.2 91.2% 59.4%;
+    --secondary-foreground: 217 25% 95%;
+
+    --muted: 215 28% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 36 100% 50%;
+    --accent-foreground: 36 25% 15%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 215 28% 17%;
+    --input: 215 28% 17%;
+    --ring: 36 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    flex-grow: 1;
+  }
+}
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
