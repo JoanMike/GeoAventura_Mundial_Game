@@ -2,6 +2,8 @@
 
 Una aplicación web interactiva para aprender geografía mundial a través de un divertido juego de banderas y países.
 
+![webpreview](https://github.com/user-attachments/assets/eb6988ff-a884-42b5-8408-3291041dab96)
+
 ## 📋 Descripción
 
 GeoAventura Mundial es un juego educativo que pone a prueba tus conocimientos de geografía mundial. Los jugadores deben identificar países basándose en sus banderas, con múltiples opciones de respuesta. La aplicación incluye más de 190 países y ofrece una experiencia de aprendizaje gamificada.
